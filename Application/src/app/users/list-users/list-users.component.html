@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let user of UsersList" class="col m4 s6">
+            <div class="card horizontal" >
+                
+                <div class="card-image">
+                
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                      <p>{{user.nom}}</p>
+                      <p><span>{{user.prenom}}</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a (click)="addAnUser()" class="waves-effect waves-light btn"><i class="material-icons right"></i>Ajouter un user</a>
+
+
+
+
+
+
+
+
+
+
+
+
